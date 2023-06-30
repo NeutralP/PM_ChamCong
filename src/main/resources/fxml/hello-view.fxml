@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: f5d6ee;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hustsoict.pm_chamcong.controllers.HelloController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #31a8c9;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="67.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../media/pacman.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="68.0" fitWidth="173.0" layoutX="15.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../media/PACMANtext.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="173.0" layoutX="14.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../media/TIMEKEEPINGtext.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="53.0" fitWidth="197.0" layoutX="18.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../media/SOFTWAREtext.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="406.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="108.0" layoutX="146.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../media/ghost.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="40.0" layoutY="170.0" text="Username">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="232.0" prefHeight="30.0" prefWidth="102.0" text="Password">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="173.0" layoutY="173.0" prefHeight="25.0" prefWidth="163.0" promptText="Username" />
+            <TextField fx:id="password" layoutX="173.0" layoutY="235.0" prefHeight="25.0" prefWidth="163.0" promptText="Password" />
+            <Button fx:id="button" layoutX="161.0" layoutY="305.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="78.0" style="-fx-background-color: cbe080;" text="Log In" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
